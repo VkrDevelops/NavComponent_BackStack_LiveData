@@ -1,5 +1,6 @@
 package com.example.navcomponentpractice
 
+import android.content.Context
 import android.os.Bundle
 import android.os.Parcel
 import android.os.Parcelable
@@ -64,19 +65,6 @@ class FirstFragment() : Fragment(),TempInterface {
 
         return binding.root
     }
-
-    /*companion object {
-
-
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            FirstFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }*/
 
     override fun mybackpress(data:String) {
         Toast.makeText(requireContext(),data,Toast.LENGTH_SHORT).show()
